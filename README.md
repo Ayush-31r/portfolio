@@ -1,73 +1,61 @@
-<h2 align="center">
-  Portfolio Website - v2.0<br/>
-  <a href="https://your-portfolio-url.com" target="_blank">Ayush Rai's Portfolio</a>
-</h2>
-<div align="center">
-  <img alt="Demo" src="./Images/readme-img1.png" />
-</div>
+# Personal Portfolio Website
 
-<br/>
+A clean and simple portfolio website built to showcase my skills and projects.
 
-<center>
+---
 
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) &nbsp;
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com) &nbsp;
-![GitHub Repo stars](https://img.shields.io/github/stars/Ayush_31r/Portfolio?color=red&logo=github&style=for-the-badge) &nbsp;
-![GitHub forks](https://img.shields.io/github/forks/Ayush_31r/Portfolio?color=red&logo=github&style=for-the-badge)
+## About This Project
 
-</center>
+This is my personal portfolio, created to provide a comprehensive overview of my work, technical skills, and professional experience. The site is fully responsive and designed for a clean user experience.
 
-<h3 align="center">
-    🔹
-    <a href="https://github.com/Ayush_31r/Portfolio/issues">Report Bug</a> &nbsp; &nbsp;
-    🔹
-    <a href="https://github.com/Ayush_31r/Portfolio/issues">Request Feature</a>
-</h3>
+---
 
-## TL;DR
+## Tech Stack
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Ayush_31r](https://github.com/Ayush_31r). Thanks!
+A few of the key technologies used to build this project:
 
-## Built With
+* **React.js**
+* **React-Bootstrap**
+* **CSS3**
+* **Vercel** (for deployment)
 
-My personal portfolio which features some of my GitHub projects as well as my resume and technical skills.<br/>
-
-This project was built using these technologies.
-
-- React.js
-- Node.js
-- CSS3
-- VsCode
-- Vercel
-
-## Features
-
-**📖 Multi-Page Layout**
-
-**🎨 Styled with React-Bootstrap and CSS with easy to customize colors**
-
-**📱 Fully Responsive**
+---
 
 ## Getting Started
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+To get a local copy up and running, follow these simple steps.
 
-## 🛠 Installation and Setup Instructions
+### Prerequisites
 
-1. Installation: `npm install`
+You will need **Node.js** and **Git** installed globally on your machine.
 
-2. In the project directory, you can run: `npm start`
+### Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    ```
+2.  **Navigate into the project directory:**
+    ```sh
+    cd your-repo-name
+    ```
+3.  **Install dependencies:**
+    ```sh
+    npm install
+    ```
+4.  **Start the development server:**
+    ```sh
+    npm start
+    ```
 
-## Usage Instructions
+---
 
-Open the project folder and Navigate to `/src/components/`. <br/>
-You will find all the components used and you can edit your information accordingly.
+## Contact
 
-### Show your support
+Ayush Rai - [LinkedIn](https://www.linkedin.com/in/ayush-rai-v1/) - rai4ayush@gmail.com
 
-Give a ⭐ if you like this website!
+---
+
+## Acknowledgements
+
+This project was inspired by the portfolio template created by [Soumyajit Behera (soumyajit4419)](https://github.com/soumyajit4419).
