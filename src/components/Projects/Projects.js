@@ -2,10 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.jpg";
-import chatify from "../../Assets/Projects/chatify.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-import emotion from "../../Assets/Projects/emotion.png";
+import zom from "../../Assets/Projects/zom.jpg";
+import ESP from "../../Assets/Projects/ESP.jpg";
+import talk from "../../Assets/Projects/talk.png";
+import truth from "../../Assets/Projects/truth.png";
+import park from "../../Assets/Projects/park.png";
 
 function Projects() {
   return (
@@ -21,40 +22,50 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={truth}
               isBlog={false}
               title="TruthLens - Fake News Classifier"
-              description="Built a data science pipeline using NLP and machine learning to classify over 5,000 news articles as real or fake. The system achieved 92% accuracy and features a prototype interface for real-time testing."
+              description="A machine learning pipeline for fake news detection with EDA, text preprocessing, TF-IDF feature extraction, and classification using Naive Bayes and Random Forest."
               ghLink="https://github.com/Ayush-31r"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={park}
               isBlog={false}
               title="Parkinson's Disease Detector"
-              description="Engineered a deep learning pipeline using CNNs on over 2,000 biomedical voice recordings to detect early-stage Parkinson's disease. The model achieved over 90% accuracy, comparable to state-of-the-art research."
+              description="A deep learning project that analyzes biomedical voice measurements to detect the presence of Parkinson’s disease. Built using scikit-learn and includes data preprocessing, feature selection, and classification for accurate predictions."
               ghLink="https://github.com/Ayush-31r"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={talk}
               isBlog={false}
               title="TalkBuds - Real-Time Chat Platform"
-              description="Developed a scalable, real-time communication platform using Django, PostgreSQL, and WebSockets. The system supports over 150 active chat rooms under high load and features secure authentication and session handling."
+              description="An online platform enabling users to engage in topic-based discussions within chat groups, supporting several users. Implemented robust user authentication, allowing for secure creation and management of active chat rooms."
               ghLink="https://github.com/Ayush-31r"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={ESP}
               isBlog={false}
               title="ESP32 Flight Controller"
               description="A complete platform for building and controlling quadcopters. Includes motor control, IMU integration for stabilization, WiFi remote control, and safety features, designed for hobbyists and drone enthusiasts."
+              ghLink="https://github.com/Ayush-31r"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={zom}
+              isBlog={false}
+              title="Zomato Ratings Analysis"
+              description="A Exploratory Data Analysis on Zomato Bangalore dataset to uncover insights about restaurants, ratings, cuisines, and dining trends."
               ghLink="https://github.com/Ayush-31r"
             />
           </Col>
