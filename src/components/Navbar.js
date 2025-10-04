@@ -12,7 +12,8 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-import { CgFileDocument, CgWorkAlt } from "react-icons/cg"; // <--- IMPORT CgWorkAlt HERE
+
+import { CgFileDocument, CgWorkAlt } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -36,7 +37,19 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        {/* ... Navbar.Brand and Navbar.Toggle ... */}
+        <Navbar.Brand href="/" className="d-flex">
+          <img src={logo} className="img-fluid logo" alt="brand" />
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => {
+            updateExpanded(expand ? false : "expanded");
+          }}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
@@ -68,7 +81,6 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            {/* NEW EXPERIENCE LINK ADDED HERE */}
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -78,7 +90,7 @@ function NavBar() {
                 <CgWorkAlt style={{ marginBottom: "2px" }} /> Experience
               </Nav.Link>
             </Nav.Item>
-
+            
             <Nav.Item>
               <Nav.Link
                 as={Link}
