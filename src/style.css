@@ -745,3 +745,97 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* --------- Experience Timeline V2 (Updated Layout) -------- */
+.timeline-container {
+  position: relative;
+  padding-left: 40px;
+  margin-left: 20px;
+  border-left: 3px solid #c084f5;
+}
+
+.timeline-item {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -49.5px;
+  top: 15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #c084f5;
+  border: 3px solid #1a0230;
+  z-index: 1;
+}
+
+.timeline-item-content {
+  background-color: rgba(20, 3, 44, 0.5);
+  padding: 20px 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(192, 132, 245, 0.5);
+  position: relative; /* ADDED - Establishes positioning context */
+  text-align: left; /* ADDED - Ensures all text is left-aligned */
+}
+
+.timeline-title {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: white;
+}
+
+.timeline-title a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.timeline-date {
+  position: absolute; /* CHANGED - Lifts the date from the text flow */
+  top: 28px; /* CHANGED - Positions from the top of the tile */
+  right: 30px; /* CHANGED - Positions from the right of the tile */
+  color: #cccccc;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.timeline-description {
+  margin-top: 15px;
+  color: white;
+  padding-left: 20px;
+}
+
+.timeline-description ul {
+  list-style-type: disc;
+}
+
+
+/* --------- Achievements List (Updated) -------- */
+.achievements-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: left;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.achievements-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 1.2em; /* Increased font size */
+  color: white; /* Set text color to white */
+}
+
+.achievements-list li::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 0.5em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c084f5; /* Custom purple bullet point */
+}
