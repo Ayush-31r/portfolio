@@ -7,6 +7,7 @@ import ESP from "../../Assets/Projects/ESP.jpg";
 import talk from "../../Assets/Projects/talk.png";
 import truth from "../../Assets/Projects/truth.png";
 import park from "../../Assets/Projects/park.png";
+import sum from "../../Assets/Projects/sum.png";
 
 function Projects() {
   return (
@@ -47,6 +48,17 @@ function Projects() {
               title="TalkBuds - Real-Time Chat Platform"
               description="An online platform enabling users to engage in topic-based discussions within chat groups, supporting several users. Implemented robust user authentication, allowing for secure creation and management of active chat rooms."
               ghLink="hhttps://github.com/Ayush-31r/Talk-Buds"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={sum}
+              isBlog={false}
+              title="Article Summarizer"
+              description="A Flask-based web app that uses HuggingFace’s BART model to generate concise summaries from any text. It features a responsive, dark-themed TailwindCSS interface and efficiently manages model loading for smooth performance."
+              ghLink="https://github.com/Ayush-31r/Summarizer"
+              demoLink="https://summarizer-wine.vercel.app/"
             />
           </Col>
 
