@@ -8,6 +8,7 @@ import talk from "../../Assets/Projects/talk.png";
 import truth from "../../Assets/Projects/truth.png";
 import park from "../../Assets/Projects/park.png";
 import sum from "../../Assets/Projects/sum.png";
+import map from "../../Assets/Projects/map.png";
 
 function Projects() {
   return (
@@ -21,6 +22,29 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={park}
+              isBlog={false}
+              title="Parkinson's Disease Detector"
+              description="A deep learning project that analyzes biomedical voice measurements to detect the presence of Parkinson's disease. Built using scikit-learn and includes data preprocessing, feature selection, and classification for accurate predictions."
+              ghLink="https://github.com/Ayush-31r/Parkinson-s-detection-model"
+              demoLink="https://parkinson-s-detection-model-deeplearning.streamlit.app/"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={map}
+              isBlog={false}
+              title="FlowCast - Urban Mobility Forecasting "
+              description="ML model predicting Bangalore travel time and fare using Uber data with spatial-temporal features and Streamlit dashboard."
+              ghLink="https://github.com/Ayush-31r/FlowCast"
+              demoLink="https://flowcast-project.streamlit.app/"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={truth}
@@ -28,16 +52,6 @@ function Projects() {
               title="TruthLens - Fake News Classifier"
               description="A machine learning pipeline for fake news detection with EDA, text preprocessing, TF-IDF feature extraction, and classification using Naive Bayes and Random Forest."
               ghLink="https://github.com/Ayush-31r/TruthLens"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={park}
-              isBlog={false}
-              title="Parkinson's Disease Detector"
-              description="A deep learning project that analyzes biomedical voice measurements to detect the presence of Parkinson’s disease. Built using scikit-learn and includes data preprocessing, feature selection, and classification for accurate predictions."
-              ghLink="https://github.com/Ayush-31r/Parkinson-s-detection-model"
             />
           </Col>
 
@@ -58,7 +72,7 @@ function Projects() {
               title="Article Summarizer"
               description="A Flask-based web app that uses HuggingFace’s BART model to generate concise summaries from any text. It features a responsive, dark-themed TailwindCSS interface and efficiently manages model loading for smooth performance."
               ghLink="https://github.com/Ayush-31r/Summarizer"
-              demoLink="https://summarizer-wine.vercel.app/"
+              demoLink="https://summarizer-texts.streamlit.app/"
             />
           </Col>
 
