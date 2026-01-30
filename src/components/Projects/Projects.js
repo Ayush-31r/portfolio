@@ -9,6 +9,7 @@ import truth from "../../Assets/Projects/truth.png";
 import park from "../../Assets/Projects/park.png";
 import sum from "../../Assets/Projects/sum.png";
 import map from "../../Assets/Projects/map.png";
+import insight from "../../Assets/Projects/insight.png";
 
 function Projects() {
   return (
@@ -34,6 +35,17 @@ function Projects() {
             />
           </Col>
 
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={insight}
+              isBlog={false}
+              title="InsightOps - Support Ticket Risk Analysis System"
+              description="A machine learning system that predicts high-risk customer support tickets using NLP features, built with a reproducible and production-ready data pipeline."
+              ghLink="https://github.com/Ayush-31r/InsightOps"
+              demoLink="https://insightops.streamlit.app/"
+            />
+          </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={map}
