@@ -10,6 +10,7 @@ import park from "../../Assets/Projects/park.png";
 import sum from "../../Assets/Projects/sum.png";
 import map from "../../Assets/Projects/map.png";
 import insight from "../../Assets/Projects/insight.png";
+import finscope from "../../Assets/Projects/finscope.png";
 
 function Projects() {
   return (
@@ -24,17 +25,18 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
 
+
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={park}
+              imgPath={finscope}
               isBlog={false}
-              title="Parkinson's Disease Detector"
-              description="A deep learning project that analyzes biomedical voice measurements to detect the presence of Parkinson's disease. Built using scikit-learn and includes data preprocessing, feature selection, and classification for accurate predictions."
-              ghLink="https://github.com/Ayush-31r/Parkinson-s-detection-model"
-              demoLink="https://parkinson-s-detection-model-deeplearning.streamlit.app/"
+              title="FinScope : Multi-Agent Financial Analyst System"
+              description="Multi-agent financial analyst system using LangGraph, FAISS, and Llama 3.3 70B to generate structured analyst briefs from SEC filings, live market data, and financial news."
+              ghLink="https://github.com/Ayush-31r/FinScope"
+              demoLink="https://finscope-api-production.up.railway.app/"
             />
           </Col>
-
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={insight}
@@ -43,6 +45,18 @@ function Projects() {
               description="A machine learning system that predicts high-risk customer support tickets using NLP features, built with a reproducible and production-ready data pipeline."
               ghLink="https://github.com/Ayush-31r/InsightOps"
               demoLink="https://insightops.streamlit.app/"
+            />
+          </Col>
+          
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={park}
+              isBlog={false}
+              title="Parkinson's Disease Detector"
+              description="A deep learning project that analyzes biomedical voice measurements to detect the presence of Parkinson's disease. Built using scikit-learn and includes data preprocessing, feature selection, and classification for accurate predictions."
+              ghLink="https://github.com/Ayush-31r/Parkinson-s-detection-model"
+              demoLink="https://parkinson-s-detection-model-deeplearning.streamlit.app/"
             />
           </Col>
           
